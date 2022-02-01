@@ -1,5 +1,5 @@
 <template>
-    <div>       dddddf
+    <div>       
                 <router-view/>
     </div>
 </template>

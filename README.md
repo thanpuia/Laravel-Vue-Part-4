@@ -22,4 +22,6 @@ app.component('example-component',ExampleComponent).mount('#app');
 8. welcome.blade.php
 the arrange ment of js can cause major problem
        <div id="app">   <example-component/> </div>
+
+       
 9. npm install vue-router@next --save
