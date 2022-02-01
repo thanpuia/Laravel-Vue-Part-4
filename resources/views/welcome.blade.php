@@ -3,30 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta name="csrf-token" value="{{ csrf_token() }}"/>
+    <title>{{env('APP_NAME')}}</title>
+    <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-    <div id="app" >
-sdff
+ 
 
-            <App/>
-
-
-    </div>
+<div id="app">
+</div>
+<script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
 </body>
 </html>

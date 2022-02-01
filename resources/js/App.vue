@@ -1,6 +1,6 @@
 <template>
-    <div>       dddd
-        <router-view></router-view>
+    <div>       dddddf
+                <router-view/>
     </div>
 </template>
 
@@ -8,7 +8,6 @@
     export default {
         name: "App",
         mounted() {
-            console.log('Component mounted.')
-        }
+         }
     }
 </script>
