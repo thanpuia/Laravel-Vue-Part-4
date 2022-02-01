@@ -13,15 +13,17 @@ Route::get('/{any}', function () {
 5. npm install vue-router
 6. npm install --save vue@next && npm install --save-dev vue-loader@next
 7. app.js
-require('./bootstrap');
-import { createApp } from "vue";
-import ExampleComponent from './components/ExampleComponent'
-const app = createApp({});
-app.component('example-component',ExampleComponent).mount('#app');
+import {createApp} from 'vue'
+require('./bootstrap')
+import App from './App.vue'
+import router from './router'
+const app = createApp(App)
+ app.use(router)
+app.mount('#app')
 
 8. welcome.blade.php
 the arrange ment of js can cause major problem
        <div id="app">   <example-component/> </div>
 
-       
+
 9. npm install vue-router@next --save
